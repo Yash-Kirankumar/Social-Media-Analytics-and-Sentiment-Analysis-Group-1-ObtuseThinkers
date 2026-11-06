@@ -1,0 +1,70 @@
+=== run 2026-11-02 10:53:29 - SUCCESS ===
+Loaded 17 order rows from 3 files, 9 customers
+Removed 1 exact duplicate(s): 17 -> 16 rows
+Validation passed: all critical rules OK
+Split: 12 trusted, 4 quarantined
+Revenue: EUR 4,015
+Wrote fct_orders.csv, quarantine_orders.csv, revenue_by_city.csv
+
+=== run 2026-11-02 10:57:28 - SUCCESS ===
+Loaded 17 order rows from 3 files, 9 customers
+Removed 1 exact duplicate(s): 17 -> 16 rows
+Validation passed: all critical rules OK
+Split: 12 trusted, 4 quarantined
+Revenue: EUR 12,565
+Wrote fct_orders.csv, quarantine_orders.csv, revenue_by_city.csv
+
+=== run 2026-11-02 10:58:06 - SUCCESS ===
+Loaded 17 order rows from 3 files, 9 customers
+Removed 1 exact duplicate(s): 17 -> 16 rows
+Validation passed: all critical rules OK
+Split: 12 trusted, 4 quarantined
+Revenue: EUR 4,015
+Wrote fct_orders.csv, quarantine_orders.csv, revenue_by_city.csv
+
+=== run 2026-11-02 11:35:10 - FAILED ===
+Loaded 17 order rows from 3 files, 9 customers
+Removed 1 exact duplicate(s): 17 -> 16 rows
+VALIDATION FAILED - pipeline stopped, no outputs written:
+ column                                        check            failure_case  index
+  email str_matches('^$|^[^@\s]+@[^@\s]+\.[^@\s]+$') clara.schmidt(at)web.de      2
+country  isin(['Germany', 'Austria', 'Switzerland'])                  Germny      6
+
+=== run 2026-11-02 11:53:23 - FAILED ===
+Loaded 22 order rows from 4 files, 9 customers
+Removed 1 exact duplicate(s): 22 -> 21 rows
+VALIDATION FAILED - pipeline stopped, no outputs written:
+    column                                check failure_case  index
+  order_id                     field_uniqueness         O101      0
+  order_id                     field_uniqueness         O101     19
+  order_id          str_matches('^[A-Z]\d{3}$')        A1001     20
+  category isin(['Accessories', 'Electronics'])      Gadgets     20
+unit_price          greater_than_or_equal_to(0)         -5.0     21
+
+=== run 2026-11-02 11:56:06 - FAILED ===
+Loaded 17 order rows from 3 files, 9 customers
+Removed 1 exact duplicate(s): 17 -> 16 rows
+VALIDATION FAILED - pipeline stopped, no outputs written:
+ column                                        check            failure_case  index
+  email str_matches('^$|^[^@\s]+@[^@\s]+\.[^@\s]+$') clara.schmidt(at)web.de      2
+country  isin(['Germany', 'Austria', 'Switzerland'])                  Germny      6
+
+
+=== Lab 3.3 preparation check ===
+The new category summary was calculated from the 3 supplied raw order files.
+Rows after exact duplicate removal: 16
+Trusted rows: 12
+Quarantined rows: 4
+Revenue: EUR 4015.00
+Revenue by category:
+Electronics: EUR 3782.59
+Accessories: EUR 232.41
+Note: The pipeline script was not executed in this build environment because Pandera is not installed and package installation is unavailable here. Run `pip install -r requirements.txt` and `python pipeline.py` locally to produce a fresh execution log.
+=== run 2026-11-06 10:41:39 - SUCCESS ===
+Loaded 17 order rows from 3 files, 9 customers
+Removed 1 exact duplicate(s): 17 -> 16 rows
+Validation passed: all critical rules OK
+Split: 12 trusted, 4 quarantined
+Revenue: EUR 4,015.00
+Wrote fct_orders.csv, quarantine_orders.csv, revenue_by_city.csv, revenue_by_category.csv
+

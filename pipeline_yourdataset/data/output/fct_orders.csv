@@ -1,0 +1,13 @@
+order_id,order_date,customer_id,category,quantity,unit_price,source_file,city,line_total
+O101,2026-01-04,C001,Electronics,1.0,499.0,orders_2026_01.csv,Berlin,499.0
+O102,2026-01-07,C002,Accessories,2.0,19.99,orders_2026_01.csv,Hamburg,39.98
+O103,2026-01-09,C003,Electronics,1.0,899.0,orders_2026_01.csv,Munich,899.0
+O104,2026-01-12,C004,Accessories,3.0,9.99,orders_2026_01.csv,Munich,29.97
+O106,2026-01-21,C005,Electronics,1.0,349.0,orders_2026_01.csv,Cologne,349.0
+O107,2026-01-28,C001,Accessories,1.0,24.5,orders_2026_01.csv,Berlin,24.5
+O108,2026-02-02,C006,Electronics,2.0,129.0,orders_2026_02.csv,Frankfurt,258.0
+O110,2026-02-11,C007,Accessories,4.0,12.9,orders_2026_02.csv,Vienna,51.6
+O112,2026-02-17,C002,Electronics,1.0,1199.0,orders_2026_02.csv,Hamburg,1199.0
+O113,2026-02-25,C008,Electronics,1.0,578.59,orders_2026_02.csv,Berlin,578.59
+O114,2026-03-03,C009,Accessories,2.0,19.99,orders_2026_03.csv,Vienna,39.98
+O115,2026-03-10,C003,Accessories,1.0,46.38,orders_2026_03.csv,Munich,46.38
