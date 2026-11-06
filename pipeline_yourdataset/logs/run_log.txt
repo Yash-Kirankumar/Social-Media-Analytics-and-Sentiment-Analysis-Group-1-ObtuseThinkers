@@ -68,3 +68,11 @@ Split: 12 trusted, 4 quarantined
 Revenue: EUR 4,015.00
 Wrote fct_orders.csv, quarantine_orders.csv, revenue_by_city.csv, revenue_by_category.csv
 
+=== run 2026-11-06 10:52:41 - SUCCESS ===
+Loaded 17 order rows from 3 files, 9 customers
+Removed 1 exact duplicate(s): 17 -> 16 rows
+Validation passed: all critical rules OK
+Split: 12 trusted, 4 quarantined
+Revenue: EUR 4,015.00
+Wrote fct_orders.csv, quarantine_orders.csv, revenue_by_city.csv, revenue_by_category.csv
+
